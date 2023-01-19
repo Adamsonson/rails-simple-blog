@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
+  <div class="form-group my-3">
+    <%= form.label :title, class: "form-label" %>
+    <%= form.text_field :title, class: 'form-control' %>
   </div>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_area :description %>
+  <div class="form-group my-3">
+    <%= form.label :description, class: "form-label" %>
+    <%= form.text_area :description, class: 'form-control' %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="actions">
+    <%= form.submit class: 'btn btn-primary col-12' %>
   </div>
 <% end %>
