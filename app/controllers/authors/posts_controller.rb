@@ -1,4 +1,4 @@
-# module Authors
+module Authors
   class PostsController < AuthorsController
     before_action :set_post, only: %i[ edit update destroy ]
 
@@ -53,4 +53,4 @@
         params.require(:post).permit(:title, :description)
       end
   end
-# end
+end
